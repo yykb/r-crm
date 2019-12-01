@@ -1,0 +1,18 @@
+.app-container {
+  height: 100%;
+  width: 100%;
+}
+
+.login-container {
+  background-color: #2d3a4b;
+
+  h3 {
+    text-align: center;
+  }
+
+  .login-form {
+    width: 520px;
+    margin: 0 auto;
+    padding: 160px 30px 0;
+  }
+}
