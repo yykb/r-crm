@@ -11,18 +11,18 @@ module.exports = {
     output: {
         filename: 'assets/scripts/[name].[contenthash:5].bundle.js',
     },
-    optimization: {
-        minimize: true,
-        runtimeChunk: {
-            name: 'manifest'
-        },
-        splitChunk: {
-            chunks: 'async',
-            minSize: 30000,
-            minChunks: 1,
-            masAsyncRequests: 5
-        }
-    },
+    // optimization: {
+    //     minimize: true,
+    //     runtimeChunk: {
+    //         name: 'manifest'
+    //     },
+    //     splitChunk: {
+    //         chunks: 'async',
+    //         minSize: 30000,
+    //         minChunks: 1,
+    //         masAsyncRequests: 5
+    //     }
+    // },
     plugins: [
 
         new MiniCssExtractPlugin({

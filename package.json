@@ -25,6 +25,7 @@
     "clientserver": "webpack-dev-server --mode development --open chrome",
     "serverbuild": "webpack --config webpack.server.config.js",
     "serverdev": "cross-env NODE_ENV=development gulp",
+    "serverprod": "cross-env NODE_ENV=production gulp",
     "serverstart": "cross-env NODE_ENV=development nodemon ./dist/app.js"
   },
   "keywords": [],
