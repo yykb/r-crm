@@ -9,7 +9,7 @@ let config = {
 if (process.env.NODE_ENV == 'development') {
     const localConfig = {
         port: 3000,
-        baseUrl: 'http://49.235.162.192/basic/web/index.php?r='
+        baseUrl: 'http://server.com/basic/web/index.php?r='
     }
     config = extend(config, localConfig);
 }
