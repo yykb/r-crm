@@ -10,9 +10,11 @@ class IndexController extends Controller {
     }
     async actionIndex(ctx, next) {
         let appString = ReactDomServer.renderToString(serverEntry('/'))
-        console.log(serverEntry)
+        // console.log(serverEntry)
         const result = await ctx.render('index', { title: '🏠home' })
-        ctx.body = result
+        
+        // ctx.body = appString
+        ctx.body = result.replace('<App />', appString)
     }
 }
 export default IndexController;

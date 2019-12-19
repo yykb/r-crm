@@ -1,6 +1,7 @@
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const Jarvis = require("webpack-jarvis");
 const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
+const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin')
 
 module.exports = {
     // externals: {
@@ -29,6 +30,7 @@ module.exports = {
             filename: 'styles/[name].[contenthash:5].css',
             chunkFilename: 'styles/[name].[contenthash:5].css'
         }),
+        new OptimizeCssAssetsPlugin({}),
         new BundleAnalyzerPlugin({ analyzerPort: 3011 })
     ]
 }

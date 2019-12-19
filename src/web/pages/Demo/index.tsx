@@ -7,6 +7,9 @@ const Demo = () => {
         <>
             <Banner/>
             <h2>Demo page</h2>
+            <Button type="primary">
+              dome btn
+            </Button>
         </>
     )
 }

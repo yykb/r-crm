@@ -1,5 +1,4 @@
 import * as React from 'react'
-import { Button } from 'antd'
 import './index.scss'
 import Banner from '@components/Banner'
 

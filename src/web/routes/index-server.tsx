@@ -2,8 +2,8 @@ import * as React from 'react';
 import { Route, Switch, RouteProps, Redirect } from "react-router-dom";
 
 import Login from "@pages/Login";
-import Home from "@pages/Login";
-import Demo from "@pages/Login";
+import Home from "@pages/Home";
+import Demo from "@pages/Demo";
 
 interface YDProps extends RouteProps {
     auth?: boolean
